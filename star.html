@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Nested Circles</title>
+    <style>
+        body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.circle-container {
+    position: relative;
+}
+
+.circle {
+    width: 50px; /* Adjust the size of the circles */
+    height: 50px;
+    background-color: #3498db; /* Adjust the color as needed */
+    border-radius: 50%;
+    position: absolute;
+}
+
+.circle-2 { top: 25px; left: 25px; }
+.circle-3 { top: 12.5px; left: 12.5px; }
+.circle-4 { top: 6.25px; left: 6.25px; }
+.circle-5 { top: 3.125px; left: 3.125px; }
+.circle-6 { top: 1.5625px; left: 1.5625px; }
+
+    </style>
+</head>
+<body>
+
+    <div class="circle-container">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2">
+            <div class="circle circle-3">
+                <div class="circle circle-4">
+                    <div class="circle circle-5">
+                        <div class="circle circle-6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
